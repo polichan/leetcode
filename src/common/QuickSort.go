@@ -1,6 +1,6 @@
-package common
+package quicksort
 
-type QuickSortInterface interface {
+type IQuickSort interface {
 	sort()
 }
 
@@ -9,7 +9,6 @@ type QuickSort struct {
 	start int
 	end int
 }
-
 
 func CreateQuickSort(arr []int, start int, end int) QuickSort  {
 	qs := QuickSort{arr, start, end}
