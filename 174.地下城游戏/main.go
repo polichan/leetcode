@@ -12,6 +12,7 @@ func calculateMinimumHP(dungeon [][]int) int {
 	for i := range hp {
 		hp[i] = make([]int, col + 1)
 	}
+
 	for a:=0; a<len(hp); a++ {
 		for b := 0; b<len(hp[0]); b++ {
 			hp[a][b] = 99999
