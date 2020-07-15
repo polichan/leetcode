@@ -1,4 +1,4 @@
-package quicksort
+package QuickSort
 
 type IQuickSort interface {
 	sort()
@@ -10,7 +10,7 @@ type QuickSort struct {
 	end int
 }
 
-func CreateQuickSort(arr []int, start int, end int) QuickSort  {
+func CreateQuickSort(arr []int, start int, end int) QuickSort {
 	qs := QuickSort{arr, start, end}
 	return qs
 }
