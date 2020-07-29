@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	
+	println(isSubsequence("abc", "ahbgdc"))
 }
 
 func isSubsequence(s string, t string) bool {
