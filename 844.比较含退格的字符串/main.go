@@ -2,7 +2,8 @@ package main
 
 func main() {
 	test := "ab#c"
-	backspaceCompare(test, test)
+	test2 := "ab#cca"
+	backspaceCompare(test, test2)
 }
 
 type Stack struct {
@@ -13,11 +14,11 @@ type Stack struct {
 func Constructor()Stack  {
 	return Stack{top: "", data: []string{}}
 }
+
 func (s *Stack)Push(str string)  {
 	if s.top == "" && str == "#"{
 		return
 	}
-
 	if str == "#" {
 		s.Pop()
 	}else {
@@ -40,6 +41,7 @@ func (s *Stack)GetAll() (res string) {
 	}
 	return res
 }
+
 
 func backspaceCompare(S string, T string) bool {
 	stack := Constructor()
