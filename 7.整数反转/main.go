@@ -6,15 +6,6 @@ func main() {
 	reverse(123)
 }
 
-/**
-//pop operation:
-pop = x % 10;
-x /= 10;
-
-//push operation:
-temp = rev * 10 + pop;
-rev = temp;
- */
 func reverse(x int) int {
 	ans := 0
 	for x != 0 {
