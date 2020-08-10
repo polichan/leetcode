@@ -3,7 +3,7 @@
 ##### 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。
 
-####示例:
+#### 示例:
 ```
 给定 nums = [2, 7, 11, 15], target = 9
 因为 nums[0] + nums[1] = 2 + 7 = 9
@@ -49,3 +49,10 @@ func twoSumUseMap(nums []int, target int) []int {
 1. 首先我们将 nums 中的每一个元素都以 nums 的 value 为 key，值为 index，即 nums 下标存入。
 2. 其次我们在 for 循环体中，每次加入一个新的 nums 中的 value 都去检查 target - 当前循环到的 value，判断是不是存在符合题目的解。
 3. 如果存在，则返回。
+
+总结：
+1. 暴力法
+2. 使用哈希表
+
+延申：
+1. 关于 [哈希表](https://github.com/polichan/leetcode/tree/master/src/common/HashMap/README.md "哈希表")
