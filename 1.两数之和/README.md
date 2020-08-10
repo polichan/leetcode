@@ -56,9 +56,9 @@ func twoSumUseMap(nums []int, target int) []int {
 2. 其次我们在 for 循环体中，每次加入一个新的 nums 中的 value 都去检查 target - 当前循环到的 value，判断是不是存在符合题目的解。
 3. 如果存在，则返回。
 
-总结：
+#### 总结：
 1. 暴力法
 2. 使用哈希表
 
-延申：
+#### 延申：
 1. 关于 [哈希表](https://github.com/polichan/leetcode/tree/master/src/common/HashMap/README.md "哈希表")
