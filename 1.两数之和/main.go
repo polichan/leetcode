@@ -7,19 +7,7 @@ func main() {
 	fmt.Println(twoSumUseMap(nums, 9))
 }
 
-/**
-双指针
-执行用时：
-124 ms
-, 在所有 Go 提交中击败了
-5.84%
-的用户
-内存消耗：
-2.9 MB
-, 在所有 Go 提交中击败了
-100.00%
-的用户
- */
+// 双指针
 func twoSum(nums []int, target int) []int {
 	var index1, index2 int
 	var ans []int
@@ -40,19 +28,7 @@ func twoSum(nums []int, target int) []int {
 	return ans
 }
 
-/**
-hashMap
-执行用时：
-4 ms
-, 在所有 Go 提交中击败了
-96.88%
-的用户
-内存消耗：
-3.8 MB
-, 在所有 Go 提交中击败了
-51.79%
-的用户
- */
+// 哈希表
 func twoSumUseMap(nums []int, target int) []int {
 	m := map[int]int{}
 	for i,v := range nums{

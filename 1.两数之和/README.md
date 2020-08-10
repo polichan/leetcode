@@ -9,7 +9,7 @@
 因为 nums[0] + nums[1] = 2 + 7 = 9
 所以返回 [0, 1]
 ```
-方法 1 - 暴力法
+方法 1 - 双指针
 ```go
 func twoSum(nums []int, target int) []int {
 	var index1, index2 int
@@ -31,7 +31,12 @@ func twoSum(nums []int, target int) []int {
 	return ans
 }
 ```
-这个解法没什么可以讲的，让我们看方法 2
+
+1. 循环的条件是两个指针 ``index1`` 与 ``index2`` 都小于 len(nums)
+2. 如果 ``index1`` 小于 ``index2`` 则判断当前这两个指针所指的下标索引是否相加符合题意的 target
+3. 符合就将下标索引加入到 ``ans`` 答案切片中
+4. 将 ``index2`` 自增，为的是减少循环次数(相较于双重 for 循环来说)
+5. 指针互换重置
 
 方法 2 - HashMap
 ```go
