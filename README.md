@@ -3,6 +3,25 @@
 
 如果这个 Repo 帮助到了你，还请给予一个小小的 star ~ 谢谢。
 
+
+### 目录结构
+    .
+    ├── leetcode
+    │   ├── 1.两数之和
+    │   │   ├── main.go 代码
+    │   │   ├── README.md 详细题解
+    │   ├── ...
+    │   └── src 数据结构 + 知识介绍
+    │       ├── common 实现常见的数据结构
+    │       |   |── BST 二叉搜索树
+    │       |   |   |── BST.go 二叉搜索树代码实现
+    │       |   |   |── BST.MD 什么是二叉搜索树
+    │       |   |── ... 
+    │       ├── knowledge 知识介绍
+    │       |   |── DATA_STRUCTURE.md 数据结构介绍
+    │       |   |── ...    
+    └── 注：该目录结构可能随着更新会有略微变动，但大体不会发生变化。
+
 ### 算法前置知识
 * [时间复杂度](https://github.com/polichan/leetcode/tree/master/src/knowledge/TIME_COMPLEXITY.md "时间复杂度")
 * [空间复杂度](https://github.com/polichan/leetcode/tree/master/src/knowledge/HashMap/SPACE_COMPLEXITY.md "空间复杂度")
