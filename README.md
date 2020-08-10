@@ -26,3 +26,10 @@
 * [时间复杂度](https://github.com/polichan/leetcode/tree/master/src/knowledge/TIME_COMPLEXITY.md "时间复杂度")
 * [空间复杂度](https://github.com/polichan/leetcode/tree/master/src/knowledge/HashMap/SPACE_COMPLEXITY.md "空间复杂度")
 * [什么是数据结构](https://github.com/polichan/leetcode/tree/master/src/knowledge/DATA_STRUCTURE.md "什么是数据结构")
+
+### 如何查题
+* 利用浏览器的``查找``功能（大部分为 ``ctrl + f``）直接搜索题号或题目名称。
+* 在``题目列表``中直接搜索并进行跳转。
+
+### 题目列表
+
