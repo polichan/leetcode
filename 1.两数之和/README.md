@@ -9,7 +9,8 @@
 因为 nums[0] + nums[1] = 2 + 7 = 9
 所以返回 [0, 1]
 ```
-方法 1 - 双指针
+
+#### 双指针
 ```go
 func twoSum(nums []int, target int) []int {
 	var index1, index2 int
@@ -38,7 +39,7 @@ func twoSum(nums []int, target int) []int {
 4. 将 ``index2`` 自增，为的是减少循环次数(相较于双重 for 循环来说)
 5. 指针互换重置
 
-方法 2 - HashMap
+#### 哈希表
 ```go
 func twoSumUseMap(nums []int, target int) []int {
 	m := map[int]int{}
