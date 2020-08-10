@@ -1,8 +1,10 @@
 package main
 
+import "fmt"
+
 func main() {
 	nums := []int{2,7,11,15}
-	twoSumUseMap(nums, 9)
+	fmt.Println(twoSumUseMap(nums, 9))
 }
 
 /**
