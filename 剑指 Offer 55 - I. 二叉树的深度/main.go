@@ -13,9 +13,7 @@ func main() {
 后续遍历 DFS
  */
 func maxDepth(root *TreeNode) int {
-	if root == nil {
-		return 0
-	}
+	if root == nil {return 0}
 	return max(maxDepth(root.Left), maxDepth(root.Right)) + 1
 }
 
@@ -27,7 +25,7 @@ func maxDepthBFS(root *TreeNode) int  {
 		return 0
 	}
 	res := 0
-	var q []*TreeNode
+	q := make([]*TreeNode, 0)
 	q = append(q, root)
 	for len(q) > 0 {
 		tmp := make([]*TreeNode, 0)
