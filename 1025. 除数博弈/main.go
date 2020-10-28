@@ -3,5 +3,5 @@ package main
 
 
 func divisorGame(N int) bool {
-	return true
+	return N % 2 == 0
 }
