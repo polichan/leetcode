@@ -16,17 +16,12 @@ type TreeNode struct {
 func increasingBST(root *TreeNode) *TreeNode {
 	slice := make([]int, 0)
 	dfs(root, &slice)
-	if len(slice) == 1{
-		return &TreeNode{Val: slice[0], Right: nil, Left: nil}
-	}
-	res := &TreeNode{Val: slice[0], Right: &TreeNode{}, Left: nil}
-	currentNode := res.Right
+	res := &TreeNode{Val: slice[0], Right: nil, Left: nil}
+	currentNode := res
 	for i := 1; i < len(slice); i++{
-		currentNode.Val = slice[i]
-		if i != len(slice) - 1 {
-			currentNode.Right = &TreeNode{}
-		}
-		currentNode = currentNode.Right
+		next := &TreeNode{Val: slice[i], Right: nil, Left: nil}
+		currentNode.Right = next
+		currentNode = next
 	}
 	return res
 }
