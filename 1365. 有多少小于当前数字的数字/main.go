@@ -27,7 +27,7 @@ func smallerNumbersThanCurrent(nums []int) []int {
 		data[i] = pair{v, i}
 	}
 	sort.Slice(data, func(i, j int) bool { return data[i].v < data[j].v })
-	ans := make([]int, n
+	ans := make([]int, n)
 	prev := -1
 	for i, d := range data {
 		if prev == -1 || d.v != data[i-1].v {
